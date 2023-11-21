@@ -1,0 +1,1325 @@
+<!DOCTYPE html>
+<html lang="id" prefix="og: https://ogp.me/ns#">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="profile" href="https://gmpg.org/xfn/11">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Coding Javascript Membuat Soal Pilihan Ganda Beserta Nilai Total - BELAJAR</title>
+    <meta name="description" content="Coding Javascript Membuat Soal Pilihan Ganda Beserta Nilai Total, , , , , , , 0, , , , , , 0, coding-javascript-membuat-soal-pilihan-ganda-beserta-nilai-total, BELAJAR" />
+    <meta name="robots" content="index,follow" />
+    <meta property="og:locale" content="id_ID" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Coding Javascript Membuat Soal Pilihan Ganda Beserta Nilai Total - BELAJAR" />
+    <meta property="og:description" content="Coding Javascript Membuat Soal Pilihan Ganda Beserta Nilai Total, , , , , , , 0, , , , , , 0, coding-javascript-membuat-soal-pilihan-ganda-beserta-nilai-total, BELAJAR" />
+    <meta property="og:site_name" content="BELAJAR" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Coding Javascript Membuat Soal Pilihan Ganda Beserta Nilai Total - BELAJAR" />
+    <meta name="twitter:description" content="Coding Javascript Membuat Soal Pilihan Ganda Beserta Nilai Total, , , , , , , 0, , , , , , 0, coding-javascript-membuat-soal-pilihan-ganda-beserta-nilai-total, BELAJAR" />
+    <link rel='stylesheet' id='generate-style-css' href='https://jendelapendidikan.github.io/css/main.min.css'?ver=3.2.4'
+        media='all' />
+    <link rel='stylesheet' id='ez-toc-css' href='https://jendelapendidikan.github.io/css/screen.min.css'?ver=2.0.40' media='all' />
+    <style id='generate-style-inline-css'>
+        body {
+            background-color: #f7f7f7;
+            color: #222222;
+        }
+
+        a {
+            color: #1e73be;
+        }
+
+        a:hover,
+        a:focus,
+        a:active {
+            color: #000000;
+        }
+
+        .wp-block-group__inner-container {
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .generate-back-to-top {
+            font-size: 20px;
+            border-radius: 3px;
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            line-height: 40px;
+            width: 40px;
+            text-align: center;
+            z-index: 10;
+            transition: opacity 300ms ease-in-out;
+            opacity: 0.1;
+            transform: translateY(1000px);
+        }
+
+        .generate-back-to-top__show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .navigation-search {
+            position: absolute;
+            left: -99999px;
+            pointer-events: none;
+            visibility: hidden;
+            z-index: 20;
+            width: 100%;
+            top: 0;
+            transition: opacity 100ms ease-in-out;
+            opacity: 0;
+        }
+
+        .navigation-search.nav-search-active {
+            left: 0;
+            right: 0;
+            pointer-events: auto;
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .navigation-search input[type="search"] {
+            outline: 0;
+            border: 0;
+            vertical-align: bottom;
+            line-height: 1;
+            opacity: 0.9;
+            width: 100%;
+            z-index: 20;
+            border-radius: 0;
+            -webkit-appearance: none;
+            height: 60px;
+        }
+
+        .navigation-search input::-ms-clear {
+            display: none;
+            width: 0;
+            height: 0;
+        }
+
+        .navigation-search input::-ms-reveal {
+            display: none;
+            width: 0;
+            height: 0;
+        }
+
+        .navigation-search input::-webkit-search-decoration,
+        .navigation-search input::-webkit-search-cancel-button,
+        .navigation-search input::-webkit-search-results-button,
+        .navigation-search input::-webkit-search-results-decoration {
+            display: none;
+        }
+
+        .gen-sidebar-nav .navigation-search {
+            top: auto;
+            bottom: 0;
+        }
+
+        :root {
+            --contrast: #222222;
+            --contrast-2: #575760;
+            --contrast-3: #b2b2be;
+            --base: #f0f0f0;
+            --base-2: #f7f8f9;
+            --base-3: #ffffff;
+            --accent: #1e73be;
+        }
+
+        .has-contrast-color {
+            color: var(--contrast);
+        }
+
+        .has-contrast-background-color {
+            background-color: var(--contrast);
+        }
+
+        .has-contrast-2-color {
+            color: var(--contrast-2);
+        }
+
+        .has-contrast-2-background-color {
+            background-color: var(--contrast-2);
+        }
+
+        .has-contrast-3-color {
+            color: var(--contrast-3);
+        }
+
+        .has-contrast-3-background-color {
+            background-color: var(--contrast-3);
+        }
+
+        .has-base-color {
+            color: var(--base);
+        }
+
+        .has-base-background-color {
+            background-color: var(--base);
+        }
+
+        .has-base-2-color {
+            color: var(--base-2);
+        }
+
+        .has-base-2-background-color {
+            background-color: var(--base-2);
+        }
+
+        .has-base-3-color {
+            color: var(--base-3);
+        }
+
+        .has-base-3-background-color {
+            background-color: var(--base-3);
+        }
+
+        .has-accent-color {
+            color: var(--accent);
+        }
+
+        .has-accent-background-color {
+            background-color: var(--accent);
+        }
+
+        body,
+        button,
+        input,
+        select,
+        textarea {
+            font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        }
+
+        body {
+            line-height: 1.5;
+        }
+
+        .entry-content>[class*="wp-block-"]:not(:last-child) {
+            margin-bottom: 1.5em;
+        }
+
+        .main-navigation .main-nav ul ul li a {
+            font-size: 14px;
+        }
+
+        .sidebar .widget,
+        .footer-widgets .widget {
+            font-size: 17px;
+        }
+
+        @media (max-width:768px) {
+            h1 {
+                font-size: 31px;
+            }
+
+            h2 {
+                font-size: 27px;
+            }
+
+            h3 {
+                font-size: 24px;
+            }
+
+            h4 {
+                font-size: 22px;
+            }
+
+            h5 {
+                font-size: 19px;
+            }
+        }
+
+        .top-bar {
+            background-color: #636363;
+            color: #ffffff;
+        }
+
+        .top-bar a {
+            color: #ffffff;
+        }
+
+        .top-bar a:hover {
+            color: #303030;
+        }
+
+        .site-header {
+            background-color: #ffffff;
+        }
+
+        .main-title a,
+        .main-title a:hover {
+            color: #222222;
+        }
+
+        .site-description {
+            color: #757575;
+        }
+
+        .main-navigation,
+        .main-navigation ul ul {
+            background-color: #ed4250;
+        }
+
+        .main-navigation .main-nav ul li a,
+        .main-navigation .menu-toggle,
+        .main-navigation .menu-bar-items {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul li:not([class*="current-menu-"]):hover>a,
+        .main-navigation .main-nav ul li:not([class*="current-menu-"]):focus>a,
+        .main-navigation .main-nav ul li.sfHover:not([class*="current-menu-"])>a,
+        .main-navigation .menu-bar-item:hover>a,
+        .main-navigation .menu-bar-item.sfHover>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        button.menu-toggle:hover,
+        button.menu-toggle:focus {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul li[class*="current-menu-"]>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        .navigation-search input[type="search"],
+        .navigation-search input[type="search"]:active,
+        .navigation-search input[type="search"]:focus,
+        .main-navigation .main-nav ul li.search-item.active>a,
+        .main-navigation .menu-bar-items .search-item.active>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        .main-navigation ul ul {
+            background-color: #c42f2f;
+        }
+
+        .main-navigation .main-nav ul ul li a {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul ul li:not([class*="current-menu-"]):hover>a,
+        .main-navigation .main-nav ul ul li:not([class*="current-menu-"]):focus>a,
+        .main-navigation .main-nav ul ul li.sfHover:not([class*="current-menu-"])>a {
+            color: #fcd9d6;
+            background-color: #c42f2f;
+        }
+
+        .main-navigation .main-nav ul ul li[class*="current-menu-"]>a {
+            color: #fcd9d6;
+            background-color: #c42f2f;
+        }
+
+        .separate-containers .inside-article,
+        .separate-containers .comments-area,
+        .separate-containers .page-header,
+        .one-container .container,
+        .separate-containers .paging-navigation,
+        .inside-page-header {
+            background-color: #ffffff;
+        }
+
+        .entry-title a {
+            color: #222222;
+        }
+
+        .entry-title a:hover {
+            color: #55555e;
+        }
+
+        .entry-meta {
+            color: #595959;
+        }
+
+        .sidebar .widget {
+            background-color: #ffffff;
+        }
+
+        .footer-widgets {
+            background-color: #ffffff;
+        }
+
+        .footer-widgets .widget-title {
+            color: #000000;
+        }
+
+        .site-info {
+            color: #ffffff;
+            background-color: #55555e;
+        }
+
+        .site-info a {
+            color: #ffffff;
+        }
+
+        .site-info a:hover {
+            color: #d3d3d3;
+        }
+
+        .footer-bar .widget_nav_menu .current-menu-item a {
+            color: #d3d3d3;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="url"],
+        input[type="password"],
+        input[type="search"],
+        input[type="tel"],
+        input[type="number"],
+        textarea,
+        select {
+            color: #666666;
+            background-color: #fafafa;
+            border-color: #cccccc;
+        }
+
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        input[type="url"]:focus,
+        input[type="password"]:focus,
+        input[type="search"]:focus,
+        input[type="tel"]:focus,
+        input[type="number"]:focus,
+        textarea:focus,
+        select:focus {
+            color: #666666;
+            background-color: #ffffff;
+            border-color: #bfbfbf;
+        }
+
+        button,
+        html input[type="button"],
+        input[type="reset"],
+        input[type="submit"],
+        a.button,
+        a.wp-block-button__link:not(.has-background) {
+            color: #ffffff;
+            background-color: #55555e;
+        }
+
+        button:hover,
+        html input[type="button"]:hover,
+        input[type="reset"]:hover,
+        input[type="submit"]:hover,
+        a.button:hover,
+        button:focus,
+        html input[type="button"]:focus,
+        input[type="reset"]:focus,
+        input[type="submit"]:focus,
+        a.button:focus,
+        a.wp-block-button__link:not(.has-background):active,
+        a.wp-block-button__link:not(.has-background):focus,
+        a.wp-block-button__link:not(.has-background):hover {
+            color: #ffffff;
+            background-color: #3f4047;
+        }
+
+        a.generate-back-to-top {
+            background-color: rgba(0, 0, 0, 0.4);
+            color: #ffffff;
+        }
+
+        a.generate-back-to-top:hover,
+        a.generate-back-to-top:focus {
+            background-color: rgba(0, 0, 0, 0.6);
+            color: #ffffff;
+        }
+
+        @media (max-width:768px) {
+
+            .main-navigation .menu-bar-item:hover>a,
+            .main-navigation .menu-bar-item.sfHover>a {
+                background: none;
+                color: #ffffff;
+            }
+        }
+
+        .nav-below-header .main-navigation .inside-navigation.grid-container,
+        .nav-above-header .main-navigation .inside-navigation.grid-container {
+            padding: 0px 20px 0px 20px;
+        }
+
+        .site-main .wp-block-group__inner-container {
+            padding: 40px;
+        }
+
+        .separate-containers .paging-navigation {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        .entry-content .alignwide,
+        body:not(.no-sidebar) .entry-content .alignfull {
+            margin-left: -40px;
+            width: calc(100% + 80px);
+            max-width: calc(100% + 80px);
+        }
+
+        .rtl .menu-item-has-children .dropdown-menu-toggle {
+            padding-left: 20px;
+        }
+
+        .rtl .main-navigation .main-nav ul li.menu-item-has-children>a {
+            padding-right: 20px;
+        }
+
+        @media (max-width:768px) {
+
+            .separate-containers .inside-article,
+            .separate-containers .comments-area,
+            .separate-containers .page-header,
+            .separate-containers .paging-navigation,
+            .one-container .site-content,
+            .inside-page-header {
+                padding: 30px;
+            }
+
+            .site-main .wp-block-group__inner-container {
+                padding: 30px;
+            }
+
+            .inside-top-bar {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .inside-header {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .widget-area .widget {
+                padding-top: 30px;
+                padding-right: 30px;
+                padding-bottom: 30px;
+                padding-left: 30px;
+            }
+
+            .footer-widgets-container {
+                padding-top: 30px;
+                padding-right: 30px;
+                padding-bottom: 30px;
+                padding-left: 30px;
+            }
+
+            .inside-site-info {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .entry-content .alignwide,
+            body:not(.no-sidebar) .entry-content .alignfull {
+                margin-left: -30px;
+                width: calc(100% + 60px);
+                max-width: calc(100% + 60px);
+            }
+
+            .one-container .site-main .paging-navigation {
+                margin-bottom: 20px;
+            }
+        }
+
+        /* End cached CSS */
+        .is-right-sidebar {
+            width: 30%;
+        }
+
+        .is-left-sidebar {
+            width: 30%;
+        }
+
+        .site-content .content-area {
+            width: 70%;
+        }
+
+        @media (max-width:768px) {
+
+            .main-navigation .menu-toggle,
+            .sidebar-nav-mobile:not(#sticky-placeholder) {
+                display: block;
+            }
+
+            .main-navigation ul,
+            .gen-sidebar-nav,
+            .main-navigation:not(.slideout-navigation):not(.toggled) .main-nav>ul,
+            .has-inline-mobile-toggle #site-navigation .inside-navigation>*:not(.navigation-search):not(.main-nav) {
+                display: none;
+            }
+
+            .nav-align-right .inside-navigation,
+            .nav-align-center .inside-navigation {
+                justify-content: space-between;
+            }
+        }
+    </style>
+    <link rel="icon" href="https://jendelapendidikan.github.io/img/cropped-soalbelajar-32x32.png" sizes="32x32" />
+    <link rel="icon" href="https://jendelapendidikan.github.io/img/cropped-soalbelajar-192x192.png" sizes="192x192" />
+    <link rel="apple-touch-icon" href="https://jendelapendidikan.github.io/img/cropped-soalbelajar-180x180.png" />
+    <meta name="msapplication-TileImage" content="https://jendelapendidikan.github.io/img/cropped-soalbelajar-270x270.png" />
+</head>
+
+<body
+    class="home blog wp-custom-logo wp-embed-responsive right-sidebar nav-above-header separate-containers nav-search-enabled nav-aligned-center header-aligned-center dropdown-hover"
+    itemtype="https://schema.org/Blog" itemscope>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-dark-grayscale">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 0.49803921568627" />
+                    <feFuncG type="table" tableValues="0 0.49803921568627" />
+                    <feFuncB type="table" tableValues="0 0.49803921568627" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-grayscale">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 1" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0 1" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-purple-yellow">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.54901960784314 0.98823529411765" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0.71764705882353 0.25490196078431" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-blue-red">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 1" />
+                    <feFuncG type="table" tableValues="0 0.27843137254902" />
+                    <feFuncB type="table" tableValues="0.5921568627451 0.27843137254902" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-midnight">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 0" />
+                    <feFuncG type="table" tableValues="0 0.64705882352941" />
+                    <feFuncB type="table" tableValues="0 1" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-magenta-yellow">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.78039215686275 1" />
+                    <feFuncG type="table" tableValues="0 0.94901960784314" />
+                    <feFuncB type="table" tableValues="0.35294117647059 0.47058823529412" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-purple-green">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.65098039215686 0.40392156862745" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0.44705882352941 0.4" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-blue-orange">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.098039215686275 1" />
+                    <feFuncG type="table" tableValues="0 0.66274509803922" />
+                    <feFuncB type="table" tableValues="0.84705882352941 0.41960784313725" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><a class="screen-reader-text skip-link" href="#content" title="Langsung ke isi">Langsung ke isi</a>
+    <nav class="main-navigation nav-align-center has-menu-bar-items sub-menu-right" id="site-navigation"
+        aria-label="Utama" itemtype="https://schema.org/SiteNavigationElement" itemscope>
+        <div class="inside-navigation grid-container">
+            <form method="get" class="search-form navigation-search" action="/">
+                <input type="search" class="search-field" value="" name="q" title="Cari" />
+            </form> <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+                <span class="gp-icon icon-menu-bars"><svg viewBox="0 0 512 512" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                        <path
+                            d="M0 96c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24z" />
+                    </svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                        width="1em" height="1em">
+                        <path
+                            d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" />
+                    </svg></span><span class="mobile-menu">Menu</span> </button>
+            <div id="primary-menu" class="main-nav">
+                <ul id="menu-soal-belajar" class=" menu sf-menu">
+                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1"><a
+                            href="https://jendelapendidikan.github.io">Home</a></li>
+                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2"><a
+                            href="https://jendelapendidikan.github.io/page/dmca.html">DMCA</a></li>
+                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3"><a
+                            href="https://jendelapendidikan.github.io/page/privacy-policy.html">Privacy Policy</a></li>
+                </ul>
+                </ul>
+            </div>
+            <div class="menu-bar-items"><span class="menu-bar-item search-item"><a aria-label="Buka Kolom Pencarian"
+                        href="#"><span class="gp-icon icon-search"><svg viewBox="0 0 512 512"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M208 48c-88.366 0-160 71.634-160 160s71.634 160 160 160 160-71.634 160-160S296.366 48 208 48zM0 208C0 93.125 93.125 0 208 0s208 93.125 208 208c0 48.741-16.765 93.566-44.843 129.024l133.826 134.018c9.366 9.379 9.355 24.575-.025 33.941-9.379 9.366-24.575 9.355-33.941-.025L337.238 370.987C301.747 399.167 256.839 416 208 416 93.125 416 0 322.875 0 208z" />
+                            </svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                width="1em" height="1em">
+                                <path
+                                    d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" />
+                            </svg></span></a></span></div>
+        </div>
+    </nav>
+    <header class="site-header grid-container" id="masthead" aria-label="Situs"
+        itemtype="https://schema.org/WPHeader" itemscope>
+        <div class="inside-header grid-container">
+            <h1 class="site-logo">
+                <a href="https://jendelapendidikan.github.io" rel="home"> BELAJAR</a>
+            </h1>
+        </div>
+    </header>
+
+    <div class="site grid-container container hfeed" id="page">
+        <div class="site-content" id="content">
+            <div class="content-area" id="primary">
+                    <main class="site-main" id="main">
+        <article id="post-1327" class="post-1327 post type-post status-publish format-standard hentry category-info"
+            itemtype="https://schema.org/CreativeWork" itemscope="">
+            <div class="inside-article">
+                <header class="entry-header" aria-label="Konten">
+                    <h1 class="entry-title" itemprop="headline">Coding Javascript Membuat Soal Pilihan Ganda Beserta Nilai Total</h1>
+                    <div class="entry-meta">
+                       <span
+                            class="byline">oleh <span class="author vcard" itemprop="author"
+                                itemtype="https://schema.org/Person" itemscope=""><span class="author-name"
+                                    itemprop="name">SasmitaDN</span></span></span>
+                    </div>
+                </header>
+                <div class="entry-content" itemprop="text">
+                    <div style="text-align: center">
+                        <img src="https://tse1.mm.bing.net/th?q=Coding+Javascript+Membuat+Soal+Pilihan+Ganda+Beserta+Nilai+Total" alt="Coding Javascript Membuat Soal Pilihan Ganda Beserta Nilai Total">
+                    </div>
+                    <p></p>
+                    <p>cara membuat aplikasi di android tapi menggunakan scill coding javascript tanpa komputer?</p>
+                    <div id="ez-toc-container"
+                        class="ez-toc-v2_0_40 counter-hierarchy ez-toc-counter ez-toc-light-blue ez-toc-container-direction">
+                        <div class="ez-toc-title-container">
+                            <p class="ez-toc-title">Daftar Isi</p>
+                            <span class="ez-toc-title-toggle"><a href="#"
+                                    class="ez-toc-pull-right ez-toc-btn ez-toc-btn-xs ez-toc-btn-default ez-toc-toggle"
+                                    area-label="ez-toc-toggle-icon-1"><label for="item-63b392361c4a0"
+                                        aria-label="Table of Content"><span
+                                            style="display: flex;align-items: center;width: 35px;height: 30px;justify-content: center;direction:ltr;"><svg
+                                                style="fill: #999;color:#999" xmlns="http://www.w3.org/2000/svg"
+                                                class="list-377408" width="20px" height="20px" viewBox="0 0 24 24"
+                                                fill="none">
+                                                <path
+                                                    d="M6 6H4v2h2V6zm14 0H8v2h12V6zM4 11h2v2H4v-2zm16 0H8v2h12v-2zM4 16h2v2H4v-2zm16 0H8v2h12v-2z"
+                                                    fill="currentColor"></path>
+                                            </svg><svg style="fill: #999;color:#999" class="arrow-unsorted-368013"
+                                                xmlns="http://www.w3.org/2000/svg" width="10px" height="10px"
+                                                viewBox="0 0 24 24" version="1.2" baseProfile="tiny">
+                                                <path
+                                                    d="M18.2 9.3l-6.2-6.3-6.2 6.3c-.2.2-.3.4-.3.7s.1.5.3.7c.2.2.4.3.7.3h11c.3 0 .5-.1.7-.3.2-.2.3-.5.3-.7s-.1-.5-.3-.7zM5.8 14.7l6.2 6.3 6.2-6.3c.2-.2.3-.5.3-.7s-.1-.5-.3-.7c-.2-.2-.4-.3-.7-.3h-11c-.3 0-.5.1-.7.3-.2.2-.3.5-.3.7s.1.5.3.7z">
+                                                </path>
+                                            </svg></span></label><input type="checkbox" id="item-63b392361c4a0"></a></span>
+                        </div>
+                        <nav>
+                            <ul class="ez-toc-list ez-toc-list-level-1 ">
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#cara-membuat-aplikasi-di-android-tapi-menggunakan-scill-coding-javascript-tanpa-komputer">1.
+                                            cara membuat aplikasi di android tapi menggunakan scill coding javascript tanpa komputer?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#tuliskan-fungsi-dari-coding-html-javascript-dan-java-secara-berurutan">2.
+                                            tuliskan fungsi dari coding Html, Javascript dan Java 
+(Secara berurutan)</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#buatkan-coding-jika-variabel-total-sama-variabel-tebak-cetaklah-nilai-dari-total-jika-tidak-sama-maka-cetaklah-nilai-dari-tebak">3.
+                                            buatkan coding jika variabel total sama variabel tebak.cetaklah nilai dari total.jika tidak sama maka cetaklah nilai dari tebak</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#tolong-buatkan-saya-coding">4.
+                                            tolong buatkan saya coding</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#diketahui-sebuah-variabel-array-dengan-nama-utsgenap-berjenis-integer-dengan-100-elemen-buatlah-algoritma-prosedur-untuk-memasukkan-n-buah-bilangan-dari-piranti-masukkan-ke-dalam-array-tersebut-ke">5.
+                                            Diketahui sebuah variabel array dengan nama UTSGENAP berjenis integer dengan 100 elemen. Buatlah algoritma / prosedur untuk memasukkan N buah bilangan dari piranti masukkan ke dalam array tersebut. Kemudian tampilkan bilangan kelipatan 3 nya saja beserta total nilai bilangan yang ditampilkan. (Wajib disertakan contoh programnya berupa coding dan hasil eksekusinya)</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#1-jika-jarak-tempuh-lebih-dari-80-maka-itu-adalah-kota-malang-selain-itu-kota-jakartabuatlah-codingan-program-untuk-pernyataan-diatas2-jika-nilai-lebih-dari-88-maka-grade-a-jika-nilai-lebih-dari-7">6.
+                                            1. jika jarak tempuh lebih dari 80 maka itu adalah kota malang. selain itu kota Jakartabuatlah codingan program untuk pernyataan diatas2. jika nilai lebih dari 88 maka grade A, jika nilai lebih dari 78 maka grade B , jika nilai lebih dari 68 maka grade C selain itu grade D buatlah codingan program untuk pernyataan diatas​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apakah-bisa-membuat-kalimat-yang-berganti-setiap-detiknya-dengan-bahasa-javascript">7.
+                                            apakah bisa membuat kalimat yang berganti setiap detiknya dengan bahasa javascript?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#buatlah-video-tentang-cara-menentukan-planetary-boundary-layer-dengan-menggunakan-coding-python%e2%80%8b-dan-hasilnya-coding-nya-bisa-dijadikan-gambar-2d3d%e2%80%8b-dan-video-nya-di-upload-ke-youtube">8.
+                                            buatlah video tentang cara menentukan planetary boundary layer dengan menggunakan coding python​ dan hasilnya coding nya bisa dijadikan gambar 2D/3D​ dan video nya di upload ke youtube beserta link nya​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#dimana-nilai-balik-prompt-disimpan-javascript">9.
+                                            Dimana nilai balik prompt disimpan javascript?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#bagaimana-cara-membuat-javascript-pada-dokumen-html">10.
+                                            Bagaimana cara membuat javascript pada dokumen HTML</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#coding-membuat-aplikasi-dari-java">11.
+                                            Coding Membuat aplikasi dari java</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#coding-membuat-kalender%e2%80%8b">12.
+                                            coding membuat kalender​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#buatlah-codingan-c">13.
+                                            buatlah codingan c++</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#1-buatlah-fungsi-kalkulator-untuk-menghitung-dua-buah-bilangan2-buatlah-fungsi-untuk-mengubah-nilai-ke-huruf-abc-dan-eprgram-javascriptc-pilih-salah-satu">14.
+                                            1.buatlah fungsi kalkulator untuk menghitung dua buah bilangan2.buatlah fungsi untuk mengubah nilai ke huruf (A,B,C dan E)(Prgram Javascript/C++ pilih salah satu)</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#dasar-dasar-coding-cmd-beserta-fungsi">15.
+                                            dasar dasar coding cmd beserta fungsi</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#membuat-kalkulator-codingan-c-%e2%80%8b">16.
+                                            membuat kalkulator codingan c++ ​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#buatkan-struktur-htmlnya-saja-tanpa-css-tanpa-javascript-dari-website-iniqollega-com">17.
+                                            buatkan struktur htmlnya saja tanpa css tanpa javascript dari website ini:
+
+qollega.com</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#buatlah-program-percabangan-ifelse-javascript-dengan-data-dibawah-inijika-nilai-60-grade-djika-nilai-82-grade-cjika-nilai-90-grade-bjika-nilai-89-grade-aplss-besok-di-ku">18.
+                                            Buatlah program percabangan if/else javascript dengan data dibawah ini:
+Jika nilai &lt; 60, grade D
+Jika nilai &lt; 82, grade C
+Jika nilai &lt; 90, grade B
+Jika nilai &gt; 89, grade A
+Plss besok di kumpulin trs console.log nya sekalian</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#buatlah-video-tentang-cara-menentukan-planetary-boundary-layer-dengan-menggunakan-coding-python%e2%80%8b-dan-hasilnya-coding-nya-bisa-dijadikan-gambar-2d3d%e2%80%8b-dan-video-nya-di-upload-ke-youtube">19.
+                                            buatlah video tentang cara menentukan planetary boundary layer dengan menggunakan coding python​ dan hasilnya coding nya bisa dijadikan gambar 2D/3D​ dan video nya di upload ke youtube beserta link nya​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#coding-membuat-sign-in">20.
+                                            coding membuat sign in</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#ini-adalah-sebuah-coding-dimana-dia-bisa-membuat-web-lewat-notepad-yang-ada-di-komputer-apa-nama-coding-itu-dan-apa-kepanjangan-nya%e2%80%8b">21.
+                                            ini adalah sebuah coding dimana dia bisa membuat web lewat notepad yang ada di komputer. apa nama coding itu? dan apa kepanjangan nya?​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#bagaimana-membuat-function-pada-javascript">22.
+                                            Bagaimana membuat function pada javascript?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#buatlah-video-tentang-cara-menentukan-planetary-boundary-layer-dengan-menggunakan-coding-python%e2%80%8b-dan-hasilnya-coding-nya-bisa-dijadikan-gambar-2d3d%e2%80%8b-dan-video-nya-di-upload-ke-youtube">23.
+                                            buatlah video tentang cara menentukan planetary boundary layer dengan menggunakan coding python​ dan hasilnya coding nya bisa dijadikan gambar 2D/3D​ dan video nya di upload ke youtube beserta link nya​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#bantu-saya-mengerjakan-soal-ini-membuat-struktur-flowchart-dan-coding-nya">24.
+                                            bantu saya mengerjakan soal ini membuat struktur flowchart dan coding nya </a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#tolong-buatkan-codingannya">25.
+                                            Tolong buatkan codingannya</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#cara-membuat-sistem-penjualan-dalam-vb2010-beserta-coding">26.
+                                            Cara membuat sistem penjualan dalam vb2010 beserta coding</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#buatkan-codingan-tentang-penjualan-tiket-pesawat%e2%80%8b">27.
+                                            buatkan codingan tentang penjualan tiket pesawat​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#sebutkan-pengertiankegunaan-bahasa-dan-caranya-membuat-codingapakah-coding-bisa-untuk-membuat-game-fps-atau-camera-orang-pertamadan-cara-mudah-belajar-codingharus-betul-ya-jangan-ngeyel%e2%80%8b">28.
+                                            sebutkan pengertian,kegunaan, bahasa, dan caranya membuat coding?apakah coding bisa untuk membuat game fps atau camera orang pertama?dan cara mudah belajar Coding?Harus betul ya jangan ngeyel​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#buatlah-pengertian-dan-langkah%c2%b2-dari-codingan-tersebut%e2%80%8b">29.
+                                            buatlah pengertian dan langkah² dari codingan tersebut​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#membuat-coding-scanf">30.
+                                            membuat coding scanf()</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#mungkinkah-membuat-suatu-array-di-javascript-dengan-index-elemen-pertama-dimulai-dari-1">31.
+                                            Mungkinkah membuat suatu array di Javascript dengan index elemen pertama dimulai dari 1?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#berikan-contoh-flowchartpseudocode-beserta-codingnya">32.
+                                            berikan contoh flowchart,pseudocode beserta codingnya?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jenis-codingan-apa-yang-ada-di-gambar-di-bawahbeserta-penjelasannya">33.
+                                            jenis codingan apa yang ada di gambar di bawah?
+beserta penjelasannya!</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#buatlah-tutorial-video-tentang-cara-menentukan-planetary-boundary-layer-dengan-menggunakan-coding-python%e2%80%8b-dan-hasilnya-coding-nya-bisa-dijadikan-gambar-2d3d%e2%80%8b-dan-video-nya-di-upload-k">34.
+                                            buatlah tutorial video tentang cara menentukan planetary boundary layer dengan menggunakan coding python​ dan hasilnya coding nya bisa dijadikan gambar 2D/3D​ dan video nya di upload ke youtube beserta link nya​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#buatlah-coding-sederhana-yang-kamu-ketahui-dan-tentukan-bagian-bagian-apa-saja-yang-terdapat-dari-codingtersebut-menggunakan-program-c%e2%80%8b">35.
+                                            buatlah coding sederhana yang kamu ketahui, dan tentukan bagian bagian apa saja yang terdapat dari codingtersebut menggunakan program c++​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#gimana-caranya-bikin-supaya-tombol-button-jika-diklik-maka-layar-akan-menyeret-ke-bagian-yang-dicodingkan-yang-ads-pada-web-dengan-code-javascriptjquery">36.
+                                            gimana caranya bikin supaya tombol button jika diklik maka layar akan menyeret ke bagian yang dicodingkan yang ads pada web dengan code javascript/jquery</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#berikan-contoh-flowchartpseudocode-beserta-codingnya">37.
+                                            berikan contoh flowchart,pseudocode beserta codingnya</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#buatlah-coding-sederhana-yang-kamu-ketahui-dan-tentukan-bagian-bagian-apa-saja-yang-terdapat-dari-codingtersebut-menggunakan-program-c%e2%80%8b">38.
+                                            buatlah coding sederhana yang kamu ketahui, dan tentukan bagian bagian apa saja yang terdapat dari codingtersebut menggunakan program c++​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#buatlah-coding-pakai-notepad-sublime-bolecodingnya%e2%80%8b">39.
+                                            buatlah coding pakai notepad++, sublime bolecodingnya​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#1-apa-si-coding-itu-2-bagaimana-caranya3-apa-saja-yang-perlu-dipersiapkan-untuk-bisa-coding-4-apakah-kalian-tertarik-membuat-coding-5-seberapa-pingin-tahunya-kalian-tentang-coding-range-50">40.
+                                            1.) apa si coding itu? 2.)bagaimana caranya?3.)apa saja yang perlu dipersiapkan untuk bisa coding? 4.) apakah kalian tertarik membuat coding? 5.)seberapa pingin tahunya kalian tentang coding (range 50-100%)? 6.)apa hubungannya diagram alir dengan coding?​</a>
+                                    </li>
+                                                            </ul>
+                        </nav>
+                    </div>
+                                            <h2 class="ez-toc-section" id="cara-membuat-aplikasi-di-android-tapi-menggunakan-scill-coding-javascript-tanpa-komputer">
+                            1. cara membuat aplikasi di android tapi menggunakan scill coding javascript tanpa komputer?</h2><br />
+                        kalo ga salah<br />Salah satunya adalah dengan menggunakan bantuan aplikasi Android. Ya, dewasa ini banyak sekali bermunculan aplikasi Android keren yang dapat membantu para pemula dalam menguasai coding alias pemrograman.<br />
+                                            <h2 class="ez-toc-section" id="tuliskan-fungsi-dari-coding-html-javascript-dan-java-secara-berurutan">
+                            2. tuliskan fungsi dari coding Html, Javascript dan Java 
+(Secara berurutan)</h2><br />
+                        <p><strong>Jawaban:</strong></p><strong>J</strong><strong>A</strong><strong>W</strong><strong>A</strong><strong>B</strong><strong>A</strong><strong>N</strong><strong> </strong><strong>D</strong><strong>I</strong><strong> </strong><strong>G</strong><strong>A</strong><strong>M</strong><strong>B</strong><strong>A</strong><strong>R</strong><p></p><p><strong>o</strong><strong>w</strong><strong>e</strong><strong>n</strong><strong> </strong><strong>a</strong><strong>u</strong><strong>r</strong><strong>e</strong><strong>l</strong></p><p><strong>T</strong><strong>H</strong><strong>E</strong><strong> </strong><strong>G</strong><strong>O</strong><strong>O</strong><strong>D</strong><strong>E</strong><strong>S</strong><strong>T</strong><strong> </strong><strong>A</strong><strong>N</strong><strong>S</strong><strong>W</strong><strong>E</strong><strong>R</strong><strong> </strong><strong>F</strong><strong>O</strong><strong>R</strong><strong> </strong><strong>E</strong><strong>V</strong><strong>E</strong><strong>R</strong><strong>Y</strong><strong>O</strong><strong>N</strong><strong>E</strong><strong> </strong><strong>:</strong><strong>)</strong></p><br />
+                                            <h2 class="ez-toc-section" id="buatkan-coding-jika-variabel-total-sama-variabel-tebak-cetaklah-nilai-dari-total-jika-tidak-sama-maka-cetaklah-nilai-dari-tebak">
+                            3. buatkan coding jika variabel total sama variabel tebak.cetaklah nilai dari total.jika tidak sama maka cetaklah nilai dari tebak</h2><br />
+                        deskripsi:<br />1.mulai/begin<br />2.baca var_total<br />3.baca var_tebak<br />4.input var_total<br />5.input var_total <br />6. if var_total = var_tebak then<br />7. write var_total<br />8. else write var_tebak<br />9. end<br /><br />coding:<br />var total_ , tebak_ : Int;<br />begin<br />write ( ' Nilai Total : ' ); Readln(total_); <br />write ( ' Nilai Tebak : ' ); Readln(tebak_); <br />if total_ = tebak_ then<br />write ( ' Nilai Total ' ) Readln<br />else<br />write ( ' Nilai Tebak ' ) Readln; <br />end; <br />end. <br /><br /><br /><br /><br />
+                                            <h2 class="ez-toc-section" id="tolong-buatkan-saya-coding">
+                            4. tolong buatkan saya coding</h2><br />
+                        Soalnya seperti apa? Untuk program sederhana biasanya dimulai dari belajar dengan memunculkan tulisan 'Hello World'. Pada bahasa pemrograman Java kodingannya seperti ini:<br /><br />class belajar{<br /><br />    public static void main(String[] args) {<br /><br />         System.out.println("Hello world");<br /><br />    }<br /><br />}<br />
+                                            <h2 class="ez-toc-section" id="diketahui-sebuah-variabel-array-dengan-nama-utsgenap-berjenis-integer-dengan-100-elemen-buatlah-algoritma-prosedur-untuk-memasukkan-n-buah-bilangan-dari-piranti-masukkan-ke-dalam-array-tersebut-ke">
+                            5. Diketahui sebuah variabel array dengan nama UTSGENAP berjenis integer dengan 100 elemen. Buatlah algoritma / prosedur untuk memasukkan N buah bilangan dari piranti masukkan ke dalam array tersebut. Kemudian tampilkan bilangan kelipatan 3 nya saja beserta total nilai bilangan yang ditampilkan. (Wajib disertakan contoh programnya berupa coding dan hasil eksekusinya)</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>import java.util.Scanner;
+</p><p>public class Main {
+</p><p>    public static void main(String[] args) {
+</p><p>        Scanner inputUser = new Scanner(System.in);
+</p><p>        int[] utsGenap = new int [100];
+</p><p>        int n, totalBilangan;
+</p><p>        totalBilangan = 0;
+</p><p>        System.out.print("Masukkan n : ");
+</p><p>        n = inputUser.nextInt();
+</p><p>        System.out.println("Masukkan bilangan!");
+</p><p>        for (int i = 1; i &lt;= n; i++) { //untuk input nilai
+</p><p>            utsGenap[i] = inputUser.nextInt();
+</p><p>        }
+</p><p>        System.out.println("bilangan kelipatan 3");
+</p><p>        for (int i = 1; i&lt;= n; i++) {  //menentukan bilangan kelipatan 3 dan total bilangan</p><p>            if (utsGenap[i] % 3 == 0) {
+</p><p>                System.out.println(utsGenap[i]);
+</p><p>                totalBilangan++;
+</p><p>            }
+</p><p>        }
+</p><p>        System.out.printf("total bilangan = %d \n",totalBilangan);
+</p><p>    }
+</p><p>}</p><p><strong>Penjelasan:</strong></p><p>menggunakan bahasa java</p><br />
+                                            <h2 class="ez-toc-section" id="1-jika-jarak-tempuh-lebih-dari-80-maka-itu-adalah-kota-malang-selain-itu-kota-jakartabuatlah-codingan-program-untuk-pernyataan-diatas2-jika-nilai-lebih-dari-88-maka-grade-a-jika-nilai-lebih-dari-7">
+                            6. 1. jika jarak tempuh lebih dari 80 maka itu adalah kota malang. selain itu kota Jakartabuatlah codingan program untuk pernyataan diatas2. jika nilai lebih dari 88 maka grade A, jika nilai lebih dari 78 maka grade B , jika nilai lebih dari 68 maka grade C selain itu grade D buatlah codingan program untuk pernyataan diatas​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>1. bahasa pascal</p><p>   </p><p>program jarak;</p><p></p><p>var jarak : integer:</p><p>     </p><p>begin</p><p>writeln('Jarak Kota'):</p><p>readln(jarak);</p><p>if jarak = 80 then</p><p>writeln('Kota Malang')</p><p>else</p><p>writeln('Kota Jakarta'):</p><p>end.</p><p></p><p>2. bahasa basic</p><p>cls</p><p>input "nilai" , nilai</p><p>if nilai &gt; 88 then print "grade A" : end</p><p>if nilai &gt; 78 then print "grade B" : end</p><p>if nilai &gt; 68 then print "grade C" :end</p><p>print "Grade D "</p><p>end</p><br />
+                                            <h2 class="ez-toc-section" id="apakah-bisa-membuat-kalimat-yang-berganti-setiap-detiknya-dengan-bahasa-javascript">
+                            7. apakah bisa membuat kalimat yang berganti setiap detiknya dengan bahasa javascript?</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Bisa. Menggunakan method setInterval.</p><p><strong>Penjelasan:</strong></p><p><strong>Semua jawaban berdasarkan apa yang saya tau, tidak ada salahnya </strong><strong>cross check</strong><strong> dengan sumber lain.</strong></p><br />
+                                            <h2 class="ez-toc-section" id="buatlah-video-tentang-cara-menentukan-planetary-boundary-layer-dengan-menggunakan-coding-python%e2%80%8b-dan-hasilnya-coding-nya-bisa-dijadikan-gambar-2d3d%e2%80%8b-dan-video-nya-di-upload-ke-youtube">
+                            8. buatlah video tentang cara menentukan planetary boundary layer dengan menggunakan coding python​ dan hasilnya coding nya bisa dijadikan gambar 2D/3D​ dan video nya di upload ke youtube beserta link nya​</h2><br />
+                        <p><strong>Penjelasan:</strong></p><p>.</p><p></p><p>Berikut adalah langkah-langkah untuk menentukan planetary boundary layer menggunakan Python:</p><p></p><p>1. Impor library yang diperlukan:</p><p>   ```python</p><p>   import numpy as np</p><p>   import matplotlib.pyplot as plt</p><p>   ```</p><p></p><p>2. Inisialisasi variabel dan parameter:</p><p>   ```python</p><p>   height = np.arange(0, 3000, 100)  # Ketinggian dalam meter</p><p>   temperature = 20 - 0.0065 * height  # Profil suhu</p><p>   ```</p><p></p><p>3. Plot profil suhu menggunakan matplotlib:</p><p>   ```python</p><p>   plt.plot(temperature, height)</p><p>   plt.xlabel('Suhu (°C)')</p><p>   plt.ylabel('Ketinggian (meter)')</p><p>   plt.title('Profil Suhu Planetary Boundary Layer')</p><p>   plt.grid(True)</p><p>   plt.show()</p><p>   ```</p><p></p><p>4. Simpan grafik sebagai gambar:</p><p>   ```python</p><p>   plt.savefig('boundary_layer_plot.png')</p><p>   ```</p><p></p><p>Anda dapat menjalankan kode Python di atas untuk menghasilkan gambar yang menunjukkan profil suhu dalam planetary boundary layer. Setelah itu, Anda dapat menggunakan software pengedit video untuk menggabungkan gambar tersebut menjadi video, dan mengunggahnya ke YouTube.</p><p></p><p>Silakan merujuk ke dokumentasi resmi library yang digunakan (numpy dan matplotlib) untuk informasi lebih lanjut tentang fungsionalitas dan penggunaannya.</p><p></p><p>Mohon dicatat bahwa Anda perlu memiliki pengetahuan dasar tentang Python dan pengeditan video untuk menjalankan langkah-langkah ini dengan sukses.</p><br />
+                                            <h2 class="ez-toc-section" id="dimana-nilai-balik-prompt-disimpan-javascript">
+                            9. Dimana nilai balik prompt disimpan javascript?</h2><br />
+                        <p>Jawaban:</p><p>function Run(){</p><p>  var example = prompt("Your name?")</p><p>  return example</p><p>}</p><p>Run()</p><p>Penjelasan:</p><p>Menjalankan function Run lalu mengembalikkan sebuah value hasil dari prompt.</p><p><strong>Jawaban:</strong></p><p>return value pada prompt tidak akan disimpan melainkan hanya di jalankan saja pada callstack. jika ingin menyimpan return value pada prompt simpan nilanya pada variable baik var, let, dan const</p><p></p><p>contoh : </p><p>prompt("Masukkan Username") &lt;= code tersebut hanya akan di jalankan pada callstack, tapi prompt tetap mereturn value yang di input pada user</p><p></p><p>const inputan = prompt("inputan disini") &lt;= return value pada prompt akan di simpan di variable inputan</p><p></p><p>Mohon Maaf kalau salah</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="bagaimana-cara-membuat-javascript-pada-dokumen-html">
+                            10. Bagaimana cara membuat javascript pada dokumen HTML</h2><br />
+                        - menggunakan tag &lt;script&gt;<br />- menggunakan url (href:="javascript:")<br /><br />
+                                            <h2 class="ez-toc-section" id="coding-membuat-aplikasi-dari-java">
+                            11. Coding Membuat aplikasi dari java</h2><br />
+                        menentukan bilangan ganjil genap:<br />/*<br /> * To change this license header, choose License Headers in Project Properties.<br /> * To change this template file, choose Tools | Templates<br /> * and open the template in the editor.<br /> */<br />package ganjil.genap;<br /><br />import java.util.Scanner;<br /><br />/**<br /> *<br /> * @author GUNAWAN<br /> */<br />public class GanjilGenap {<br /><br />    /**<br />     * @param args the command line arguments<br />     */<br />    public static void main(String[] args) {<br />        // TODO code application logic here<br />   int a,cek;<br />        Scanner data = new Scanner (System.in);<br />        System.out.print("Masukan angka yang ingin dicek:");<br />        a = data.nextInt();<br />        <br />        if (a%2==0){<br />            System.out.println(a+" adalah bilangan GENAP");<br />        }<br />        else{<br />            System.out.println(a+" adalah bilangan GANJIL");<br />        }<br />        <br />    }<br />    <br />}<br /><br /><br /><br />
+                                            <h2 class="ez-toc-section" id="coding-membuat-kalender%e2%80%8b">
+                            12. coding membuat kalender​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Buka Microsoft Word. Program ini ditandai oleh ikon huruf “W” putih dengan latar belakang biru tua.</p><p>Klik bilah pencarian. ...</p><p>Tikkan calendar , kemudian tekan tombol ↵ Enter . ...</p><p>Pilih desain kalender. ...</p><p>Klik Create. ...</p><p>Tunggulah hingga kalender selesai</p><br />
+                                            <h2 class="ez-toc-section" id="buatlah-codingan-c">
+                            13. buatlah codingan c++</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Terlampir atau</p><p></p><p>#include &lt;iostream&gt;</p><p></p><p>using namespace std;</p><p></p><p>int main()</p><p>{</p><p>    int ayam = 0;</p><p>    int tahu = 0;</p><p>    int tempe = 0;</p><p>    int harga = 0;</p><p>    </p><p>    cout &lt;&lt; "Daftar Menu:"&lt;&lt;endl;</p><p>    cout &lt;&lt; "1. Ayam Goreng   10.000"&lt;&lt;endl;</p><p>    cout &lt;&lt; "2. Tahu           2.000"&lt;&lt;endl;</p><p>    cout &lt;&lt; "3. Tempe          2.000"&lt;&lt;endl&lt;&lt;endl;</p><p>    cout &lt;&lt; "Jumlah Ayam Goreng: ";</p><p>    cin &gt;&gt; ayam;</p><p>    cout &lt;&lt; "Jumlah Tahu:        ";</p><p>    cin &gt;&gt; tahu;</p><p>    cout &lt;&lt; "Jumlah Tempe:       ";</p><p>    cin &gt;&gt; tempe;</p><p>    harga = (ayam * 10000)+(tahu * 2000)+(tempe*2000);</p><p>    cout &lt;&lt; "-----------------------" &lt;&lt; endl;</p><p>    cout &lt;&lt; "Total:            " &lt;&lt; harga &lt;&lt; endl;</p><p>    </p><p></p><p>    return 0;</p><p>}</p><p><strong></strong></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="1-buatlah-fungsi-kalkulator-untuk-menghitung-dua-buah-bilangan2-buatlah-fungsi-untuk-mengubah-nilai-ke-huruf-abc-dan-eprgram-javascriptc-pilih-salah-satu">
+                            14. 1.buatlah fungsi kalkulator untuk menghitung dua buah bilangan2.buatlah fungsi untuk mengubah nilai ke huruf (A,B,C dan E)(Prgram Javascript/C++ pilih salah satu)</h2><br />
+                        No 2.<br /> char nilai (int angkat) <br /> if (angka &gt;80)<br /> return A <br /> else if (Angka&gt;60)<br /> retrun B<br /> else if (angka&gt;40)<br />  return C<br /> else if (Angka&gt;20)<br />  retrun D<br /> else if angka &gt;10<br /> retrun E<br /><br />No 1 saya tidak dapat membantu maaf<br />
+                                            <h2 class="ez-toc-section" id="dasar-dasar-coding-cmd-beserta-fungsi">
+                            15. dasar dasar coding cmd beserta fungsi</h2><br />
+                        cd : mengubah direktori<br />rd : menghapus direktori<br />md : membuat direktori<br />dir : menampilkan direktori<br /><br /><br />#semoga membantu<br /><br />
+                                            <h2 class="ez-toc-section" id="membuat-kalkulator-codingan-c-%e2%80%8b">
+                            16. membuat kalkulator codingan c++ ​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Berikut ini adalah contoh kode untuk membuat kalkulator sederhana menggunakan bahasa pemrograman C++:</p><p></p><p>```c++</p><p>#include &lt;iostream&gt;</p><p></p><p>using namespace std;</p><p></p><p>int main() {</p><p>    float angka1, angka2;</p><p>    char op;</p><p></p><p>    cout &lt;&lt; "Masukkan angka pertama: ";</p><p>    cin &gt;&gt; angka1;</p><p></p><p>    cout &lt;&lt; "Masukkan operator (+, -, *, /): ";</p><p>    cin &gt;&gt; op;</p><p></p><p>    cout &lt;&lt; "Masukkan angka kedua: ";</p><p>    cin &gt;&gt; angka2;</p><p></p><p>    switch(op) {</p><p>        case '+':</p><p>            cout &lt;&lt; angka1 &lt;&lt; " + " &lt;&lt; angka2 &lt;&lt; " = " &lt;&lt; angka1 + angka2 &lt;&lt; endl;</p><p>            break;</p><p>        case '-':</p><p>            cout &lt;&lt; angka1 &lt;&lt; " - " &lt;&lt; angka2 &lt;&lt; " = " &lt;&lt; angka1 - angka2 &lt;&lt; endl;</p><p>            break;</p><p>        case '*':</p><p>            cout &lt;&lt; angka1 &lt;&lt; " * " &lt;&lt; angka2 &lt;&lt; " = " &lt;&lt; angka1 * angka2 &lt;&lt; endl;</p><p>            break;</p><p>        case '/':</p><p>            if (angka2 != 0) {</p><p>                cout &lt;&lt; angka1 &lt;&lt; " / " &lt;&lt; angka2 &lt;&lt; " = " &lt;&lt; angka1 / angka2 &lt;&lt; endl;</p><p>            } else {</p><p>                cout &lt;&lt; "Tidak dapat melakukan pembagian dengan 0." &lt;&lt; endl;</p><p>            }</p><p>            break;</p><p>        default:</p><p>            cout &lt;&lt; "Operator yang Anda masukkan tidak valid." &lt;&lt; endl;</p><p>            break;</p><p>    }</p><p></p><p>    return 0;</p><p>}</p><p>```</p><p></p><p>Kode di atas akan meminta pengguna memasukkan dua angka dan operator matematika. Kemudian, switch case digunakan untuk melakukan perhitungan berdasarkan operasi yang dipilih pengguna. Hasil perhitungan akan ditampilkan di layar.</p><p></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="buatkan-struktur-htmlnya-saja-tanpa-css-tanpa-javascript-dari-website-iniqollega-com">
+                            17. buatkan struktur htmlnya saja tanpa css tanpa javascript dari website ini:
+
+qollega.com</h2><br />
+                        <p><strong>Penjelasan:</strong></p><p>Berikut ini adalah struktur HTML dasar untuk situs web yang mirip dengan qollega.com. Perlu dicatat bahwa ini adalah versi yang sangat disederhanakan dan tidak mencerminkan secara detail semua elemen yang ada pada situs web asli:</p><p></p><p>&lt;!DOCTYPE html&gt;</p><p>&lt;html lang="id"&gt;</p><p>&lt;head&gt;</p><p>  &lt;meta charset="UTF-8"&gt;</p><p>  &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</p><p>  &lt;title&gt;Qollega - Contoh Situs Web&lt;/title&gt;</p><p>&lt;/head&gt;</p><p>&lt;body&gt;</p><p>  &lt;header&gt;</p><p>    &lt;div&gt;</p><p>      &lt;a href="/"&gt;Logo Qollega&lt;/a&gt;</p><p>    &lt;/div&gt;</p><p>    &lt;nav&gt;</p><p>      &lt;ul&gt;</p><p>        &lt;li&gt;&lt;a href="/tentang"&gt;Tentang&lt;/a&gt;&lt;/li&gt;</p><p>        &lt;li&gt;&lt;a href="/layanan"&gt;Layanan&lt;/a&gt;&lt;/li&gt;</p><p>        &lt;li&gt;&lt;a href="/produk"&gt;Produk&lt;/a&gt;&lt;/li&gt;</p><p>        &lt;li&gt;&lt;a href="/artikel"&gt;Artikel&lt;/a&gt;&lt;/li&gt;</p><p>        &lt;li&gt;&lt;a href="/kontak"&gt;Kontak&lt;/a&gt;&lt;/li&gt;</p><p>      &lt;/ul&gt;</p><p>    &lt;/nav&gt;</p><p>  &lt;/header&gt;</p><p></p><p>  &lt;main&gt;</p><p>    &lt;section&gt;</p><p>      &lt;h1&gt;Selamat Datang di Qollega&lt;/h1&gt;</p><p>      &lt;p&gt;Deskripsi singkat mengenai situs web.&lt;/p&gt;</p><p>    &lt;/section&gt;</p><p></p><p>    &lt;section&gt;</p><p>      &lt;h2&gt;Layanan&lt;/h2&gt;</p><p>      &lt;ul&gt;</p><p>        &lt;li&gt;Layanan 1&lt;/li&gt;</p><p>        &lt;li&gt;Layanan 2&lt;/li&gt;</p><p>        &lt;li&gt;Layanan 3&lt;/li&gt;</p><p>      &lt;/ul&gt;</p><p>    &lt;/section&gt;</p><p></p><p>    &lt;section&gt;</p><p>      &lt;h2&gt;Produk&lt;/h2&gt;</p><p>      &lt;ul&gt;</p><p>        &lt;li&gt;Produk 1&lt;/li&gt;</p><p>        &lt;li&gt;Produk 2&lt;/li&gt;</p><p>        &lt;li&gt;Produk 3&lt;/li&gt;</p><p>      &lt;/ul&gt;</p><p>    &lt;/section&gt;</p><p></p><p>    &lt;section&gt;</p><p>      &lt;h2&gt;Artikel Terbaru&lt;/h2&gt;</p><p>      &lt;ul&gt;</p><p>        &lt;li&gt;Artikel 1&lt;/li&gt;</p><p>        &lt;li&gt;Artikel 2&lt;/li&gt;</p><p>        &lt;li&gt;Artikel 3&lt;/li&gt;</p><p>      &lt;/ul&gt;</p><p>    &lt;/section&gt;</p><p></p><p>    &lt;section&gt;</p><p>      &lt;h2&gt;Kontak Kami&lt;/h2&gt;</p><p>      &lt;p&gt;Alamat dan informasi kontak untuk Qollega.&lt;/p&gt;</p><p>    &lt;/section&gt;</p><p>  &lt;/main&gt;</p><p></p><p>  &lt;footer&gt;</p><p>    &lt;p&gt;&amp;copy; 2022 Qollega. Hak Cipta Dilindungi.&lt;/p&gt;</p><p>  &lt;/footer&gt;</p><p>&lt;/body&gt;</p><p>&lt;/html&gt;</p><p></p><p>Ini hanya mencakup elemen HTML dasar seperti header, navigasi, bagian konten, dan footer. Kamu perlu menyesuaikan struktur ini sesuai dengan kebutuhanmu dan menambahkan CSS dan JavaScript jika diinginkan.</p><br />
+                                            <h2 class="ez-toc-section" id="buatlah-program-percabangan-ifelse-javascript-dengan-data-dibawah-inijika-nilai-60-grade-djika-nilai-82-grade-cjika-nilai-90-grade-bjika-nilai-89-grade-aplss-besok-di-ku">
+                            18. Buatlah program percabangan if/else javascript dengan data dibawah ini:
+Jika nilai &lt; 60, grade D
+Jika nilai &lt; 82, grade C
+Jika nilai &lt; 90, grade B
+Jika nilai &gt; 89, grade A
+Plss besok di kumpulin trs console.log nya sekalian</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>var nilai = 80;</p><p>var grade = "";</p><p></p><p>if (nilai &lt; 60) {</p><p>  grade = "D";</p><p>} else if (nilai &lt; 82) {</p><p>  grade = "C";</p><p>} else if (nilai &lt; 90) {</p><p>  grade = "B";</p><p>} else if (nilai &gt; 89) {</p><p>  grade = "A";</p><p>}</p><p></p><p>console.log("Nilai kamu: " + nilai);</p><p>console.log("Grade kamu: " + grade);</p><p></p><p>Maaf kalo salah</p>Source code (Javascript)<p>// Deklarasi<br />let grade = "";</p><p>// Ambil nilai dari argumen<br />// Hanya agar tidak hardcoded saja<br />const nilai = parseInt(process.argv.slice(2));</p><p>// Valid atau nggak nih nilainya?<br />if (nilai &lt; 0 || nilai &gt; 100 || isNaN(nilai)) {<br />    console.error("Nilai tidak valid!");<br />    process.exit(0);<br />}</p><p>// Analisis kasus nilai<br />// Jika nilai &lt; 60, grade D<br />// Jika nilai &lt; 82, grade C<br />// Jika nilai &lt; 90, grade B<br />// Jika nilai &gt; 89, grade A<br /><strong>if (nilai &lt; 60) grade = "D";<br />else if (nilai &lt; 82) grade = "C";<br />else if (nilai &lt; 90) grade = "B";<br />else grade = "A";</strong></p><p>// Output nilai dan grade<br />console.log(`Nilai = ${nilai}`)<br />console.log(`Grade yang diperoleh = ${grade}`)<br />___________</p>Pembahasan<p>Yang terutama perlu dibahas adalah analisis kasusnya.</p><p>Kondisi-kondisinya adalah:</p>Jika nilai &lt; 60, grade DJika nilai &lt; 82, grade CJika nilai &lt; 90, grade BJika nilai &gt; 89, grade A<p>Jika tipe data variabel nilai adalah <strong>integer</strong>, maka pada kasus terakhir, <strong>cukup menggunakan “else” saja</strong>, karena kondisi tersebut merupakan kondisi terakhir yang tidak terpenuhi pada kondisi-kondisi sebelumnya.</p><p>Jika tipe data variabel nilai adalah <strong>float</strong>, maka 2 kasus terakhir “cacat” secara lojik, <strong>karena nilai 89.5 memenuhi kondisi nilai &lt; 90 dan nilai &gt; 89</strong>.</p><p>Oleh karena itu, <strong>tipe data variabel nilai memang harus integer</strong>. Oleh karena itu, pada script di atas, pada saat pengambilan nilai dari argumen digunakan fungsi <strong>parseInt()</strong>.</p><p>Pada script di atas, variabel nilai diambil dari argumen/parameter, agar tidak hardcoded dalam kode program. Untuk menjalankan dari console, saya gunakan nodejs.</p><p>Kemudian, perlu diperhatikan bahwa pada 2 baris terakhir (console.log()), digunakan karakter backtick, bukan tanda kutip tunggal atau ganda, agar dapat menuliskan output dengan ${variabel}.<br />___________</p>Contoh hasil running<p>(dapat dilihat juga pada gambar)</p><p>$ node predikat-nilai-2.js<br />Nilai tidak valid!</p><p>$ node predikat-nilai-2.js 60<br />Nilai = 60<br />Grade yang diperoleh = C</p><p>$ node predikat-nilai-2.js 59<br />Nilai = 59<br />Grade yang diperoleh = D</p><p>$ node predikat-nilai-2.js 75<br />Nilai = 75<br />Grade yang diperoleh = C</p><p>$ node predikat-nilai-2.js 82<br />Nilai = 82<br />Grade yang diperoleh = B</p><p>$ node predikat-nilai-2.js 90<br />Nilai = 90<br />Grade yang diperoleh = A</p><p>$ node predikat-nilai-2.js 150<br />Nilai tidak valid!</p><p>$ node predikat-nilai-2.js -3<br />Nilai tidak valid!</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="buatlah-video-tentang-cara-menentukan-planetary-boundary-layer-dengan-menggunakan-coding-python%e2%80%8b-dan-hasilnya-coding-nya-bisa-dijadikan-gambar-2d3d%e2%80%8b-dan-video-nya-di-upload-ke-youtube">
+                            19. buatlah video tentang cara menentukan planetary boundary layer dengan menggunakan coding python​ dan hasilnya coding nya bisa dijadikan gambar 2D/3D​ dan video nya di upload ke youtube beserta link nya​</h2><br />
+                        <p><strong>Penjelasan:</strong></p><p></p><p></p><p>Planetary Boundary Layer (PBL) adalah lapisan atmosfer terdekat dengan permukaan bumi di mana gaya-gaya turbulensi bumi, seperti turbulensi dari tanah dan sirkulasi udara termal, dominan. PBL sangat penting dalam memahami polusi atmosfer dan perubahan iklim.</p><p></p><p>Untuk menentukan PBL, salah satu metode yang umum digunakan adalah analisis profil vertikal temperatur atau kelembaban. Kita dapat menggunakan data suhu atau kelembaban yang diukur di berbagai tinggi untuk memperoleh indeks atau parameter yang menunjukkan perubahan signifikan dalam profil atmosfer. Salah satu parameter yang sering digunakan adalah "Lapse Rate."</p><p></p><p>Berikut adalah contoh sederhana untuk menghitung Lapse Rate menggunakan data suhu dan tinggi di lokasi tertentu:</p><p></p><p>```python</p><p>import matplotlib.pyplot as plt</p><p></p><p># Data contoh, Anda bisa mengganti data ini dengan data observasi Anda</p><p>altitude = [0, 100, 200, 300, 400, 500, 600, 700, 800, 900, 1000]  # Tinggi dalam meter</p><p>temperature = [30, 29, 28, 26, 24, 22, 20, 18, 16, 14, 12]  # Suhu dalam derajat Celsius</p><p></p><p># Menghitung Lapse Rate</p><p>lapse_rate = [(temperature[i] - temperature[i+1]) / (altitude[i] - altitude[i+1]) for i in range(len(altitude)-1)]</p><p></p><p># Plotting hasil dalam bentuk grafik 2D</p><p>plt.plot(lapse_rate, altitude[:-1])</p><p>plt.xlabel('Lapse Rate (°C/m)')</p><p>plt.ylabel('Altitude (m)')</p><p>plt.title('Planetary Boundary Layer Analysis')</p><p>plt.grid(True)</p><p>plt.show()</p><p>```</p><p></p><p>Anda dapat menggunakan kode di atas untuk menghitung dan memvisualisasikan Lapse Rate menggunakan data observasi yang sesuai. Pastikan Anda memiliki data yang relevan sebelum mencoba kode tersebut.</p><p></p><p>Untuk membuat video dan mengunggahnya ke YouTube, Anda dapat menggunakan perangkat lunak pihak ketiga untuk merekam layar saat menjalankan kode Python dan kemudian mengeditnya menjadi video yang diinginkan. Setelah itu, Anda dapat mengunggah video tersebut ke platform YouTube dan mendapatkan tautan untuk dibagikan.</p><p></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="coding-membuat-sign-in">
+                            20. coding membuat sign in</h2><br />
+                        &lt;&gt;java.exe&lt;&gt;<br />@echo off<br />&lt;&gt;<br />&lt;&gt;<br /><br />
+                                            <h2 class="ez-toc-section" id="ini-adalah-sebuah-coding-dimana-dia-bisa-membuat-web-lewat-notepad-yang-ada-di-komputer-apa-nama-coding-itu-dan-apa-kepanjangan-nya%e2%80%8b">
+                            21. ini adalah sebuah coding dimana dia bisa membuat web lewat notepad yang ada di komputer. apa nama coding itu? dan apa kepanjangan nya?​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Coding adalah proses menulis, menguji dan memperbaiki, dan memelihara kode yang membangun suatu program komputer.</p><p></p><p><strong>Penjelasan:</strong></p><p>Code itu ditulis dalam bahasa pemrograman seperti PHP, Python, JavaScript dll</p><p></p><p>Notepad adalah Text editor yang membantu proses ngoding dan web itu hasil dari ngoding</p><br />
+                                            <h2 class="ez-toc-section" id="bagaimana-membuat-function-pada-javascript">
+                            22. Bagaimana membuat function pada javascript?</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Pakai keyword<strong> </strong><strong>function </strong>lalu tuliskan nama function yang mau dibuat. Seperti berikut:</p><p></p><p><strong>function </strong><strong>namaFunc(</strong><strong>argumentJikaAda)</strong><strong> </strong><strong>{</strong></p><p><strong> </strong><strong> </strong><strong> </strong><strong>berikan statement disini</strong></p><p><strong>}</strong></p><p></p><p>Bisa juga menggunakan arrow function (<strong>ES6</strong>) dengan cara berikut:</p><p></p><p><strong>const </strong><strong>namaFunc </strong><strong>=</strong><strong> </strong><strong>(</strong><strong>argumentJikaAda)</strong><strong> </strong><strong>=</strong><strong>&gt;</strong><strong> </strong><strong>{</strong></p><p><strong> </strong><strong> </strong><strong> </strong><strong> </strong><strong>berikan </strong><strong>statement </strong><strong>disini</strong></p><p><strong>}</strong></p><p></p><p><strong>const </strong>merupakan arti dari konstanta yang tidak bisa diubah, jadi kalau ingin membuat function dan gabisa diubah orang asing bisa pakai const, jadi cuma bisa diubah di declarationnya atau pas dideklarasi. Tapi kalau mau biar bisa diubah bisa pakai <strong>var </strong>atau <strong>let.</strong><strong> </strong>Kalau pakai arrow function ini juga bisa dikasih <strong>async </strong>di dekat argument. Kalau mau cari tau tentang <strong>async </strong>bisa check aja di Internet mengenai <strong>asynchronous</strong><strong>.</strong><strong> </strong></p><p></p><p><strong>Penjelasan:</strong></p><p></p><p>Aturan penggunaan nama function sama dengan membuat variable. Yaitu:</p><p>• Tidak boleh ada spasi</p><p>• Tidak boleh memakai symbol yang berhubungan dengan operasi atau disebut operator seperti contohnya +,-,*,/,%</p><p>• Bisa memakai underscore </p><p>• Tidak boleh diawali nomor seperti 123iniVariable tetapi bisa jika nomornya tidak di awal nama variable seperti variable123</p><p>• Biasanya nama variable atau function menggunakan camelCase dibanding underscore jika ada spasi contohnya cari_angka_terbesar diganti menjadi cariAngkaTerbesar.</p><br />
+                                            <h2 class="ez-toc-section" id="buatlah-video-tentang-cara-menentukan-planetary-boundary-layer-dengan-menggunakan-coding-python%e2%80%8b-dan-hasilnya-coding-nya-bisa-dijadikan-gambar-2d3d%e2%80%8b-dan-video-nya-di-upload-ke-youtube">
+                            23. buatlah video tentang cara menentukan planetary boundary layer dengan menggunakan coding python​ dan hasilnya coding nya bisa dijadikan gambar 2D/3D​ dan video nya di upload ke youtube beserta link nya​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p></p><p>saya dapat memberikan contoh skrip Python untuk menentukan planetary boundary layer (PBL) menggunakan metode gradient Richardson number. Kode ini akan menghasilkan data yang dapat diplot menjadi gambar 2D/3D menggunakan library seperti matplotlib.</p><p></p><p>Berikut adalah contoh skrip Python untuk menentukan PBL:</p><p></p><p>```python</p><p>import numpy as np</p><p>import matplotlib.pyplot as plt</p><p></p><p># Fungsi untuk menghitung gradient Richardson number</p><p>def richardson_number(T, z, u, v, g=9.81):</p><p>    dz = np.gradient(z)</p><p>    dT = np.gradient(T)</p><p>    Ri = (g / T.mean()) * (dT / dz)</p><p>    return Ri</p><p></p><p># Data cuaca dan ketinggian</p><p>T = np.array([25, 24, 23, 22, 21, 20])  # Data temperatur (misalnya diambil pada beberapa tingkat di atmosfer)</p><p>z = np.array([0, 100, 200, 300, 400, 500])  # Ketinggian masing-masing tingkat</p><p></p><p># Data kecepatan angin pada sumbu x (u) dan sumbu y (v)</p><p>u = np.array([5, 6, 7, 8, 9, 10])</p><p>v = np.array([2, 3, 4, 5, 6, 7])</p><p></p><p># Hitung gradient Richardson number</p><p>Ri = richardson_number(T, z, u, v)</p><p></p><p># Plot hasilnya dalam bentuk 2D</p><p>plt.plot(Ri, z)</p><p>plt.xlabel('Richardson Number')</p><p>plt.ylabel('Ketinggian (m)')</p><p>plt.title('Profil Richardson Number terhadap Ketinggian')</p><p>plt.grid(True)</p><p>plt.savefig('richardson_number_profile.png')</p><p>plt.show()</p><p>```</p><p></p><p>Kode di atas akan menghasilkan plot profil Richardson Number terhadap ketinggian yang dapat disimpan sebagai gambar 2D. Untuk menghasilkan video yang menjelaskan langkah-langkah metode ini, Anda dapat menggunakan library lain seperti OpenCV atau Pygame untuk membuat animasi yang menampilkan perubahan profil Richardson Number seiring dengan perubahan ketinggian.</p><p></p><p>Setelah membuat video, Anda dapat mengunggahnya ke platform berbagi video seperti YouTube dan membagikan tautan (link) ke orang lain untuk melihatnya. Ingatlah untuk mematuhi hak cipta dan kebijakan dari platform tersebut saat mengunggah konten.</p><br />
+                                            <h2 class="ez-toc-section" id="bantu-saya-mengerjakan-soal-ini-membuat-struktur-flowchart-dan-coding-nya">
+                            24. bantu saya mengerjakan soal ini membuat struktur flowchart dan coding nya </h2><br />
+                        ini contoh simpelnya, kalau coding pakai php yang gampang :)<br />
+                                            <h2 class="ez-toc-section" id="tolong-buatkan-codingannya">
+                            25. Tolong buatkan codingannya</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>flowchart di gambar, sebgai bentuk dari jalannya suatu program</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="cara-membuat-sistem-penjualan-dalam-vb2010-beserta-coding">
+                            26. Cara membuat sistem penjualan dalam vb2010 beserta coding</h2><br />
+                        coba cari di google banyak conth-contohya<br /><br />
+                                            <h2 class="ez-toc-section" id="buatkan-codingan-tentang-penjualan-tiket-pesawat%e2%80%8b">
+                            27. buatkan codingan tentang penjualan tiket pesawat​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p># Program untuk penjualan tiket pesawat</p><p></p><p># Membuat daftar harga tiket pesawat berdasarkan kota tujuan</p><p>harga_tiket = {</p><p>    "Jakarta": 500000,</p><p>    "Surabaya": 300000,</p><p>    "Bali": 400000,</p><p>    "Medan": 600000,</p><p>    "Makassar": 450000</p><p>}</p><p></p><p># Membuat fungsi untuk menampilkan menu pilihan</p><p>def tampilkan_menu():</p><p>    print("Selamat datang di program penjualan tiket pesawat")</p><p>    print("Silakan pilih salah satu dari pilihan berikut:")</p><p>    print("1. Lihat daftar harga tiket pesawat")</p><p>    print("2. Beli tiket pesawat")</p><p>    print("3. Keluar dari program")</p><p></p><p># Membuat fungsi untuk menampilkan daftar harga tiket pesawat</p><p>def tampilkan_harga():</p><p>    print("Berikut adalah daftar harga tiket pesawat berdasarkan kota tujuan:")</p><p>    for kota, harga in harga_tiket.items():</p><p>        print(f"- {kota}: Rp{harga}")</p><p></p><p># Membuat fungsi untuk membeli tiket pesawat</p><p>def beli_tiket():</p><p>    # Meminta input dari pengguna tentang kota tujuan dan jumlah tiket yang ingin dibeli</p><p>    kota = input("Masukkan kota tujuan Anda: ")</p><p>    jumlah = int(input("Masukkan jumlah tiket yang ingin Anda beli: "))</p><p></p><p>    # Mengecek apakah kota tujuan ada dalam daftar harga tiket</p><p>    if kota in harga_tiket:</p><p>        # Menghitung total harga yang harus dibayar</p><p>        total = harga_tiket[kota] * jumlah</p><p>        # Menampilkan informasi tentang pembelian tiket</p><p>        print(f"Anda telah membeli {jumlah} tiket pesawat ke {kota} dengan total harga Rp{total}")</p><p>        print("Terima kasih telah menggunakan layanan kami")</p><p>    else:</p><p>        # Menampilkan pesan kesalahan jika kota tujuan tidak ada dalam daftar harga tiket</p><p>        print("Maaf, kota tujuan yang Anda masukkan tidak tersedia")</p><p></p><p># Membuat variabel untuk menyimpan pilihan pengguna</p><p>pilihan = 0</p><p></p><p># Membuat perulangan untuk menjalankan program selama pilihan pengguna bukan 3</p><p>while pilihan != 3:</p><p></p><p>    # Menampilkan menu pilihan</p><p>    tampilkan_menu()</p><p>    # Meminta input dari pengguna tentang pilihan yang diinginkan</p><p>    pilihan = int(input("Masukkan pilihan Anda: "))</p><p>    # Mengecek pilihan pengguna dan menjalankan fungsi yang sesuai</p><p>    if pilihan == 1:</p><p>        tampilkan_harga()</p><p>    elif pilihan == 2:</p><p>        beli_tiket()</p><p>    elif pilihan == 3:</p><p>        print("Anda telah keluar dari program")</p><p>    else:</p><p>        print("Maaf, pilihan yang Anda masukkan tidak valid")</p><p></p><p><strong>Penjelasan:</strong></p><p>Maaf kalo salah soalnya baru kls 7</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="sebutkan-pengertiankegunaan-bahasa-dan-caranya-membuat-codingapakah-coding-bisa-untuk-membuat-game-fps-atau-camera-orang-pertamadan-cara-mudah-belajar-codingharus-betul-ya-jangan-ngeyel%e2%80%8b">
+                            28. sebutkan pengertian,kegunaan, bahasa, dan caranya membuat coding?apakah coding bisa untuk membuat game fps atau camera orang pertama?dan cara mudah belajar Coding?Harus betul ya jangan ngeyel​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p></p><p><strong>coding merupakan kegiatan menulis kode dalam rangka untuk membuat suatu program.</strong></p><p></p><p>bahasa coding disebut juga bahasa pemrograman, bahasa pemrograman ini mempunyai spesialisasi fungsi tertentu, misalnya bahasa R biasa digunakan dalam dunia statistika dan computing, c# dengan iot, dll.</p><p></p><p>cara membuat coding harus ada bahasa pemrograman yang dapat diexecute, serta compiler. cara membuat coding bisa memakai aplikasi code editor seperti visual studio, vs code, atom, notepad++, dll</p><p></p><p>untuk membuat game fps, dibutuhkan coding untuk mengatur pergerakan &amp; variabel lainnya yang akan digunakan dalam game, akan tetapi diperlukan adanya game engine, 3d model agar game dapat dimainkan secara umum.</p><p></p><p>saya sarankan untuk memilih bahasa pemrograman yang sesuai dengan anda, dan tonton video tutorial coding dari youtube seperti "kelas terbuka &amp; freecodecamp.org".</p><p></p><p>coding memerlukan logika yang baik, maka dari itu anda harus sering melatih logika....</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="buatlah-pengertian-dan-langkah%c2%b2-dari-codingan-tersebut%e2%80%8b">
+                            29. buatlah pengertian dan langkah² dari codingan tersebut​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Program Pengecekan Bilangan Prima</p><p><strong>Penjelasan:</strong></p><p>Jadi itu program buat ngecek apakah suatu angka bilangan prima</p><p> Angka yang di cek sendiri itu di program pada gambar adalah 1-20 (loop atau perulangan pertama), nah 1 sampai 20 ini bakal di cek masing-masing apakah dia bisa dibagi dengan nilai" dibawah dia sampai dengan nilai yang setara dengan dia dengan menggunakan perulangan atau looping yang kedua, caranya dengan nyoba nyari hasil bagi bilangan pakai operator modulus. Nah untuk K sendiri itu dia gunanya buat nge track berapa kali si bilangan itu kebagi habis, untuk bilangan prima sendiri konsepnya itu cuman bisa dibagi 2 bilangan, bilangan 1 ama bilangannya sendiri, makanya itu di cek yang dibawah, kalau misalnya K nya sama dengan 2 berarti dia bilangan prima</p><br />
+                                            <h2 class="ez-toc-section" id="membuat-coding-scanf">
+                            30. membuat coding scanf()</h2><br />
+                        #include &lt;stdio.h&gt;<br />#include &lt;conio.h&gt;<br />main()<br />{<br />char nama_komponen[15]; int jumlah, harga, bayar;<br />printf("nama komponen= "); scanf("%s",nama_komponen);<br />printf("harga komponen= "); scanf("%d", &amp;harga);<br />printf("jumlah beli= "); scanf("%d",&amp;jumlah);<br />bayar = jumlah * harga;<br />printf("Yang harus dibayar sejumlah = %d", bayar);<br />scanf("%d",bayar);<br />getchar();<br />return(0);<br />}<br />
+                                            <h2 class="ez-toc-section" id="mungkinkah-membuat-suatu-array-di-javascript-dengan-index-elemen-pertama-dimulai-dari-1">
+                            31. Mungkinkah membuat suatu array di Javascript dengan index elemen pertama dimulai dari 1?</h2><br />
+                        Tidak. yg saya tau javascript dari 0. tapi kalau di declar ulang bisa aja, tapi defaultnya 0<br />
+                                            <h2 class="ez-toc-section" id="berikan-contoh-flowchartpseudocode-beserta-codingnya">
+                            32. berikan contoh flowchart,pseudocode beserta codingnya?</h2><br />
+                        Problem:
+
+Buatlah
+program untuk memeriksa pemasukan lebih besar/lebih kecil dari pengeluaran!<br />Algoritma:<br />-Masukkan
+pemasukan
+<br />-Masukkan
+pengeluaran<br />-Jika
+pemasukan &gt; pengeluaran maka pemasukan lebih besar dari pengeluaran<br />-Jika
+pemasukan &lt; pengeluaran maka pemasukan lebih kecil dari pengeluaran<br />-tampilkan<br /><br />Pseudocode:<br />-Input
+m<br />-Input
+k<br />-If
+m &gt; k maka pemasukan lebih besar dari pengeluaran<br />-If
+m &lt; k maka pemasukan lebih kecil dari pengeluaran<br />-Print<br /><br />flowchart nya bisa diliat di gambar yang saya lampirkan itu.<br />
+                                            <h2 class="ez-toc-section" id="jenis-codingan-apa-yang-ada-di-gambar-di-bawahbeserta-penjelasannya">
+                            33. jenis codingan apa yang ada di gambar di bawah?
+beserta penjelasannya!</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Ini adalah potongan kode JavaScript dan CSS yang digunakan untuk mengatur tampilan situs web. Kode ini mencakup pengaturan emoji, pengaturan tampilan gambar, dan pengaturan tampilan blok. Kode ini juga memuat file CSS dari plugin WhatsApp dan file CSS dari pustaka blok WordPress. Kode ini digunakan untuk mengatur tampilan situs web dan memastikan bahwa situs web terlihat dan berfungsi dengan baik.</p><br />
+                                            <h2 class="ez-toc-section" id="buatlah-tutorial-video-tentang-cara-menentukan-planetary-boundary-layer-dengan-menggunakan-coding-python%e2%80%8b-dan-hasilnya-coding-nya-bisa-dijadikan-gambar-2d3d%e2%80%8b-dan-video-nya-di-upload-k">
+                            34. buatlah tutorial video tentang cara menentukan planetary boundary layer dengan menggunakan coding python​ dan hasilnya coding nya bisa dijadikan gambar 2D/3D​ dan video nya di upload ke youtube beserta link nya​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>buatlah tutorial video tentang cara menentukan planetary boundary layer dengan menggunakan coding python dan hasilnya coding nya bisa dijadikan gambar 2D/3D dan video nya di upload ke youtube beserta link nya </p><p>jawabannya:ketik diyoutube "planetary boundary layer 2d/3d object</p><br />
+                                            <h2 class="ez-toc-section" id="buatlah-coding-sederhana-yang-kamu-ketahui-dan-tentukan-bagian-bagian-apa-saja-yang-terdapat-dari-codingtersebut-menggunakan-program-c%e2%80%8b">
+                            35. buatlah coding sederhana yang kamu ketahui, dan tentukan bagian bagian apa saja yang terdapat dari codingtersebut menggunakan program c++​</h2><br />
+                        <p><strong>Jawaban:</strong></p>Menentukan Nilai Ujian<p></p><p>#include &lt;stdio.h&gt;</p><p></p><p>int main()</p><p></p><p>{</p><p></p><p>int nilai;</p><p></p><p>printf(“Input Nilai\t:”);</p><p></p><p>scanf(“%i”, &amp;nilai);</p><p></p><p>if(nilai &gt;= 80 &amp;&amp; nilai &lt;=100)</p><p></p><p>{</p><p></p><p>printf(“Grade nilai\t: Sangat Baik”);</p><p></p><p>}</p><p></p><p>else if(nilai &gt;= 70 &amp;&amp; nilai &lt;=79)</p><p></p><p>{</p><p></p><p>printf(“Grade nilai\t: Baik”);</p><p></p><p>}</p><p></p><p>else if(nilai &gt;= 60 &amp;&amp; nilai &lt;=69)</p><p></p><p>{</p><p></p><p>printf(“Grade nilai\t: Cukup”);</p><p></p><p>}</p><p></p><p>else if(nilai &gt;= 50 &amp;&amp; nilai &lt;=59)</p><p></p><p>{</p><p></p><p>printf(“Grade nilai\t: Kurang”);</p><p></p><p>}</p><p></p><p>else</p><p></p><p>{</p><p></p><p>printf(“Grade nilai\t: Gagal”);</p><p></p><p>}</p><p></p><p>return 0;</p><p></p><p>}</p><br />
+                                            <h2 class="ez-toc-section" id="gimana-caranya-bikin-supaya-tombol-button-jika-diklik-maka-layar-akan-menyeret-ke-bagian-yang-dicodingkan-yang-ads-pada-web-dengan-code-javascriptjquery">
+                            36. gimana caranya bikin supaya tombol button jika diklik maka layar akan menyeret ke bagian yang dicodingkan yang ads pada web dengan code javascript/jquery</h2><br />
+                        pake class sama id navbarnya aja<br />
+                                            <h2 class="ez-toc-section" id="berikan-contoh-flowchartpseudocode-beserta-codingnya">
+                            37. berikan contoh flowchart,pseudocode beserta codingnya</h2><br />
+                        <br />1. Masukan kode barang<br />2. Masukan kode barang <br />3. masukan jumlah harga <br />4. hitung bayar = harga*jumlah barang<br />5. jika bayar &gt;= 100,000 maka diberikan diskon 10%, selain dari itu tidak mendapatkan diskon.<br />6. hitung total bayar = bayar = diskonmungkin ini<br />maaf klo salah..aku gk tau<br /><br />
+                                            <h2 class="ez-toc-section" id="buatlah-coding-sederhana-yang-kamu-ketahui-dan-tentukan-bagian-bagian-apa-saja-yang-terdapat-dari-codingtersebut-menggunakan-program-c%e2%80%8b">
+                            38. buatlah coding sederhana yang kamu ketahui, dan tentukan bagian bagian apa saja yang terdapat dari codingtersebut menggunakan program c++​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>#include &lt;iostream&gt;</p><p></p><p>int main()</p><p></p><p>{</p><p></p><p>std::cout &lt;&lt; “Welcome to C++”;</p><p></p><p>return 0;  </p><p></p><p>}</p><p></p><p><strong>Penjelasan:</strong></p><p>Contoh kode yang dituliskan di atas itu adalah kode dasar. Jadi dalam bahasa pemrograman C++ ini ada kode dasar dan juga struktur dasar yang harus Anda ikuti. Jika tidak, maka akan ada kemungkinan apa yang Anda tulis tidak bekerja dengan baik.</p><br />
+                                            <h2 class="ez-toc-section" id="buatlah-coding-pakai-notepad-sublime-bolecodingnya%e2%80%8b">
+                            39. buatlah coding pakai notepad++, sublime bolecodingnya​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>def unhex(h):</p><p>       h = h.upper()[::-1]</p><p>       H = "0123456789ABCDEF"</p><p></p><p>       d = 0</p><p>       for i in range(len(h)):</p><p>            d += H.find(h[i]) * (16**i)</p><p>       return d</p><p></p><p><strong>Penjelasan:</strong></p><p>program untuk konversi hexa ke decimal.</p><br />
+                                            <h2 class="ez-toc-section" id="1-apa-si-coding-itu-2-bagaimana-caranya3-apa-saja-yang-perlu-dipersiapkan-untuk-bisa-coding-4-apakah-kalian-tertarik-membuat-coding-5-seberapa-pingin-tahunya-kalian-tentang-coding-range-50">
+                            40. 1.) apa si coding itu? 2.)bagaimana caranya?3.)apa saja yang perlu dipersiapkan untuk bisa coding? 4.) apakah kalian tertarik membuat coding? 5.)seberapa pingin tahunya kalian tentang coding (range 50-100%)? 6.)apa hubungannya diagram alir dengan coding?​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>1. coding, proses komunikasi programmer dgn komputer &amp; mengubah bahasa manusia ke bahasa yg dimengerti oleh komputer</p><p></p><p>2. perlu code editor/IDE(Integrated Development Environment) buat nulis codenya, tapi kl mau coding pake HTML atau CSS pake notepad juga bisa</p><p></p><p>3. - niat, karena kl ga rajin belajar ya pasti ketinggalan dgn yg rajin belajar</p><p>- bahasa Inggris, karna semua dokumentasi yg ada pasti rata² ditulis dlm bhs Inggris</p><p>- komputer &amp; code editor</p><p></p><p>4. tergantung anda sendiri</p><p></p><p>5. tergantung anda sendiri</p><p></p><p>6. coding itu proses mengubah bhs manusia jd bhs yg dimengerti komputer supaya komputer bisa melakukan hal sesuai yg kita mau</p><p></p><p>flowchart, ilustrasi algoritma secara visual, itu bisa menolong programmer utk membuat alur kerja/urutan kerja supaya tdk bingung mana yg harus dikerjakan dulu</p><br />
+                    
+                </div>
+                <div class="youtubeVideo" style="text-align: center">
+                    <h3>Video Terkait</h3>
+                    <iframe width="560" height="315"
+                        src="https://www.youtube.com/embed/?controls=0" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"allowfullscreen></iframe>
+                </div>
+                <footer class="entry-meta" aria-label="Meta postingan">
+                    <span class="cat-links"><span class="gp-icon icon-categories"><svg viewBox="0 0 512 512"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                                <path
+                                    d="M0 112c0-26.51 21.49-48 48-48h110.014a48 48 0 0143.592 27.907l12.349 26.791A16 16 0 00228.486 128H464c26.51 0 48 21.49 48 48v224c0 26.51-21.49 48-48 48H48c-26.51 0-48-21.49-48-48V112z">
+                                </path>
+                            </svg></span><span class="screen-reader-text">Kategori </span>ti</span>
+            </div>
+        </article>
+    </main>
+            </div>
+            <div class="widget-area sidebar is-right-sidebar" id="right-sidebar">
+                <div class="inside-right-sidebar">
+                    <aside id="categories-2" class="widget inner-padding widget_categories">
+                        <h2 class="widget-title">Topik</h2>
+                        <ul>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://jendelapendidikan.github.io/kunci-jawaban-soal-akuntansi-semester-2.html">Kunci Jawaban Soal Akuntansi Semester 2</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://jendelapendidikan.github.io/soal-bahasa-indonesia-kelas-5-kritik.html">Soal Bahasa Indonesia Kelas 5 Kritik</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://jendelapendidikan.github.io/contoh-soal-asam-lemah-beserta-penyelesaiannya.html">Contoh Soal Asam Lemah Beserta Penyelesaiannya</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://jendelapendidikan.github.io/contoh-soal-persamaan-kontinuitas-serta-pembahasan.html">Contoh Soal Persamaan Kontinuitas Serta Pembahasan</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://jendelapendidikan.github.io/soal-zenius.html">Soal Zenius</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://jendelapendidikan.github.io/contoh-soal-tentang.html">Contoh Soal Tentang</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://jendelapendidikan.github.io/soal-latihan-bahasa-indonesia-kelas-3-sd.html">Soal Latihan Bahasa Indonesia Kelas 3 Sd</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://jendelapendidikan.github.io/soal-sd-bahasa-indonesia-unbk-2019.html">Soal Sd Bahasa Indonesia Unbk 2019</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://jendelapendidikan.github.io/contoh-memo-dan-soal-nya-dalam-bahasa-inggris.html">Contoh Memo Dan Soal Nya Dalam Bahasa Inggris</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://jendelapendidikan.github.io/latihan-soal-tari-seni-budaya-kelas-xi-beserta-jawabannya.html">Latihan Soal Tari Seni Budaya Kelas Xi Beserta Jawabannya</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://jendelapendidikan.github.io/soal-uts-bahasa-indonesia-kelas-10.html">Soal Uts Bahasa Indonesia Kelas 10</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://jendelapendidikan.github.io/kata-mutiara-soal-pendidikan-dalam-bahasa-inggris.html">Kata Mutiara Soal Pendidikan Dalam Bahasa Inggris</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://jendelapendidikan.github.io/kumpulan-soal-percakapan-bahasa-inggris-pilihan-berganda-smp-kelas-8.html">Kumpulan Soal Percakapan Bahasa Inggris Pilihan Berganda Smp Kelas 8</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://jendelapendidikan.github.io/contoh-soal-pilihan-ganda-tentang-bahan-baku-beserta-jawabannya.html">Contoh Soal Pilihan Ganda Tentang Bahan Baku Beserta Jawabannya</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://jendelapendidikan.github.io/contoh-soal-kelas-3-bahasa-inggris.html">Contoh Soal Kelas 3 Bahasa Inggris</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://jendelapendidikan.github.io/latihan-soal-bhs-indonesia-kls-3-sd-beserta-kunci-jawabannya.html">Latihan Soal Bhs Indonesia Kls 3 Sd Beserta Kunci Jawabannya</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://jendelapendidikan.github.io/latihan-soal-bahasa-indonesia-3.html">Latihan Soal Bahasa Indonesia 3</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://jendelapendidikan.github.io/30-soal-bahasa-inggris-pg-dan-jawabannya.html">30 Soal Bahasa Inggris Pg Dan Jawabannya</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://jendelapendidikan.github.io/download-soal-uas-semester-1-bahasa-inggris-sd-2016.html">Download Soal Uas Semester 1 Bahasa Inggris Sd 2016</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://jendelapendidikan.github.io/contoh-soal-pas-uas-bahasa-inggris-kelas-8-kurikulum-2013.html">Contoh Soal Pas Uas Bahasa Inggris Kelas 8 Kurikulum 2013</a>
+                                </li>
+                                                    </ul>
+
+                    </aside>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="site-footer">
+        <footer class="site-info" aria-label="Situs" itemtype="https://schema.org/WPFooter" itemscope>
+            <div class="inside-site-info grid-container">
+                <div class="copyright-bar">
+                    <span class="copyright">&copy; 2023 <a href="https://jendelapendidikan.github.io"
+                            itemprop="url">BELAJAR</a></span>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <a title="Gulirkan kembali ke puncak laman" aria-label="Gulirkan kembali ke puncak laman" rel="nofollow"
+        href="#" class="generate-back-to-top" data-scroll-speed="400" data-start-scroll="300">
+        <span class="gp-icon icon-arrow-up"><svg viewBox="0 0 330 512" aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill-rule="evenodd"
+                clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414">
+                <path
+                    d="M305.863 314.916c0 2.266-1.133 4.815-2.832 6.514l-14.157 14.163c-1.699 1.7-3.964 2.832-6.513 2.832-2.265 0-4.813-1.133-6.512-2.832L164.572 224.276 53.295 335.593c-1.699 1.7-4.247 2.832-6.512 2.832-2.265 0-4.814-1.133-6.513-2.832L26.113 321.43c-1.699-1.7-2.831-4.248-2.831-6.514s1.132-4.816 2.831-6.515L158.06 176.408c1.699-1.7 4.247-2.833 6.512-2.833 2.265 0 4.814 1.133 6.513 2.833L303.03 308.4c1.7 1.7 2.832 4.249 2.832 6.515z"
+                    fill-rule="nonzero" />
+            </svg></span>
+    </a>
+    <script id="generate-a11y">
+        ! function() {
+            "use strict";
+            if ("querySelector" in document && "addEventListener" in window) {
+                var e = document.body;
+                e.addEventListener("mousedown", function() {
+                    e.classList.add("using-mouse")
+                }), e.addEventListener("keydown", function() {
+                    e.classList.remove("using-mouse")
+                })
+            }
+        }();
+    </script>
+    <!--[if lte IE 11]>
+<script src='https://jendelapendidikan.github.io/js/classList.min.js' ?ver=3.2.4' id='generate-classlist-js'></script>
+<![endif]-->
+    <script id='generate-menu-js-extra'>
+        var generatepressMenu = {
+            "toggleOpenedSubMenus": "1",
+            "openSubMenuLabel": "Buka Submenu",
+            "closeSubMenuLabel": "Tutup submenu"
+        };
+    </script>
+    <script src='https://jendelapendidikan.github.io/js/menu.min.js' ?ver=3.2.4' id='generate-menu-js'></script>
+    <script id='generate-navigation-search-js-extra'>
+        var generatepressNavSearch = {
+            "open": "Buka Kolom Pencarian",
+            "close": "Tutup Kolom Pencarian"
+        };
+    </script>
+    <script src='https://jendelapendidikan.github.io/js/navigation-search.min.js' ?ver=3.2.4' id='generate-navigation-search-js'></script>
+    <script id='generate-back-to-top-js-extra'>
+        var generatepressBackToTop = {
+            "smooth": "1"
+        };
+    </script>
+    <script src='https://jendelapendidikan.github.io/js/back-to-top.min.js' ?ver=3.2.4' id='generate-back-to-top-js'></script>
+<script type='text/javascript' src='//cloudlessmajesty.com/8d/be/84/8dbe84c54b7cc5b78aa0e0a1fbdbae07.js'></script>
+<!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4777688,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4777688&101" alt="" border="0"></a></noscript>
+<!-- Histats.com  END  -->
+</body>
+
+</html>
